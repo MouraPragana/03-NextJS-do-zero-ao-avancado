@@ -5,6 +5,7 @@ import { Contato } from "./pages/Contact";
 import { DefaultLayout } from "./layout";
 import { Error } from "./pages/Error";
 import { Produto } from "./pages/Product";
+import { NovaAula } from "./pages/NovaAula";
 
 export const Router = () => {
   return (
@@ -15,8 +16,9 @@ export const Router = () => {
           <Route path="/about" Component={Sobre} />
           <Route path="/contact" Component={Contato} />
           <Route path="/produto/:id" Component={Produto} />
-          <Route path="*" Component={Error} />
         </Route>
+        <Route path="/styled" Component={NovaAula} />
+        <Route path="*" Component={Error} />
       </Routes>
     </BrowserRouter>
   );
